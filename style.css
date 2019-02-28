@@ -38,19 +38,19 @@ body {
     line-height: 200px;
     border-radius: 50%;
     border: none;
-    background: linear-gradient(to left, var(--second-color), var(--first-color));
+    background: radial-gradient(var(--second-color), var(--first-color));
     color: black;
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
-    animation: pulse 4s infinite alternate;
+    animation: breathe 4s ease-in-out alternate infinite;
 }
 
-@keyframes pulse {
+@keyframes breathe {
     0% {
-        background: var(--second-color);
+        transform: scale(1);
     }
     100% {
-        background: var(--first-color);
+        transform: scale(1.5);
     }
 }
