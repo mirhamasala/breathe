@@ -9,6 +9,8 @@ body {
     margin: 0;
     color: var(--white-primary);
     font-family: Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -51,6 +53,6 @@ body {
         transform: scale(1);
     }
     100% {
-        transform: scale(1.5);
+        transform: scale(1.4);
     }
 }
