@@ -1,29 +1,29 @@
 :root {
-    --bg-color: #222;
-    --first-color: rgb(253, 116, 108);
-    --second-color: rgb(255, 144, 104);
+    --white-primary:rgb(255, 255, 255);
+    --black-primary: rgb(51, 51, 51);
+    --bubble-primary: rgb(255, 144, 104);
+    --bubble-secondary: rgb(253, 116, 108);
 }
 
 body {
-    background: var(--bg-color);
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: .25rem;
     margin: 0;
+    color: var(--white-primary);
+    font-family: Helvetica, sans-serif;
 }
 
 .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
 .color-pickers {
     display: flex;
     align-items: center;
     margin: 35px;
+    color: var(--black-primary);
     font-size: 1rem;
 }
 
@@ -35,13 +35,13 @@ body {
 .breathe-bubble {
     width: 200px;
     height: 200px;
-    line-height: 200px;
     border-radius: 50%;
     border: none;
-    background: radial-gradient(var(--second-color), var(--first-color));
-    color: black;
-    font-size: 1.5rem;
-    font-weight: 400;
+    background: radial-gradient(var(--bubble-primary), var(--bubble-secondary));
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 200px;
+    letter-spacing: .125rem;
     text-align: center;
     animation: breathe 4s ease-in-out alternate infinite;
 }
