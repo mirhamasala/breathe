@@ -17,6 +17,7 @@ The `object.property`, `object.method()` is the single most important concept in
 This is, also, how you talk with the DOM, and how you'll end up talking with an audio object that will handle the breathe-in, breathe-out sounds.
 
 ## Resources
+
 - [Recreating the Apple Watch Breathe App Animation](https://css-tricks.com/recreating-apple-watch-breathe-app-animation/)
 
 ### Examples of Breathe Bubble
@@ -43,3 +44,5 @@ This is, also, how you talk with the DOM, and how you'll end up talking with an 
 - [font-smooth](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth)
 
 - [What is the best font color for text on a white background screen?](https://www.quora.com/What-is-the-best-font-color-for-text-on-a-white-background-screen-Are-there-any-studies-to-back-this-up-in-terms-of-optimal-readability)
+
+- [animation-play-state](https://tympanus.net/codrops/css_reference/animation-play-state/)
