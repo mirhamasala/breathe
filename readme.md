@@ -17,6 +17,7 @@ The `object.property`, `object.method()` is the single most important concept in
 This is, also, how you talk with the DOM, and how you'll end up talking with an audio object that will handle the breathe-in, breathe-out sounds.
 
 ## Resources
+- [Recreating the Apple Watch Breathe App Animation](https://css-tricks.com/recreating-apple-watch-breathe-app-animation/)
 
 ### Examples of Breathe Bubble
 
@@ -31,7 +32,7 @@ This is, also, how you talk with the DOM, and how you'll end up talking with an 
 - CSS variables
 [30 Day Vanilla JS Coding Challenge - Playing with CSS Variables and JS](https://javascript30.com/)
 
-- Easing functions
+- Easing functionshttps://css-tricks.com/recreating-apple-watch-breathe-app-animation/
 <https://css-tricks.com/ease-out-in-ease-in-out/>
 
 - `font-smoothing` property
