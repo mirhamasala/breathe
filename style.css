@@ -56,7 +56,6 @@ body {
 .spinning-circle {
     position: absolute;
     border: transparent;
-    overflow: visible;
     animation: spin calc(var(--breathe-time) * 2) linear infinite;
 }
 
