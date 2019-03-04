@@ -38,25 +38,30 @@ body {
     align-items: center;
     height: 300px;
     width: 300px;
-    /* border: 2px solid black; */
     animation: breathe var(--breathe-time) ease-in-out alternate infinite;
 }
 
-.outer-circle {
+.outer-circle, .spinning-circle {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100% - 2px);
     width: calc(100% - 2px);
-    border: 1px solid var(--bubble-primary-lighter);
+    border: 1px solid var(--bubble-primary);
     border-radius: 50%;
     overflow: hidden;
 }
 
-.top-drop {
+.spinning-circle {
     position: absolute;
-    top: -10px;
+    border: transparent;
+    overflow: visible;
+    animation: spin calc(var(--breathe-time) * 2) linear infinite;
+}
+
+.half-circle {
+    position: absolute;
     left: calc(50% - 10px);
     height: 20px;
     width: 20px;
@@ -64,14 +69,16 @@ body {
     border-radius: 50%;
 }
 
-.bottom-drop {
-    position: absolute;
+.half-circle.bottom {
     bottom: -10px;
-    left: calc(50% - 10px);
-    height: 20px;
-    width: 20px;
-    background-color: var(--bubble-primary-lighter);
-    border-radius: 50%;
+}
+
+.half-circle.top {
+    top: -10px;
+}
+
+.half-circle.top.darker {
+    background-color: var(--bubble-primary);
 }
 
 .breathe-bubble {
@@ -95,5 +102,14 @@ body {
     }
     100% {
         transform: scale(1.2);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
