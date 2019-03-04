@@ -9,3 +9,12 @@ function updateColors () {
 // Add event listeners on color pickers
 colors.forEach(color => color.addEventListener("click", updateColors));
 colors.forEach(color => color.addEventListener("change", updateColors));
+
+// Toggle play state animation
+const breatheBubble = document.querySelector(".bubble-wrapper");
+const spinningCircle = document.querySelector(".spinning-circle");
+
+breatheBubble.addEventListener("click", () => {
+    breatheBubble.classList.toggle("paused");
+    spinningCircle.classList.toggle("paused");
+});
