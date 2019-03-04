@@ -12,7 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
     color: var(--white-primary);
     font-family: Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
