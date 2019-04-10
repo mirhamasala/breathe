@@ -8,8 +8,11 @@
 
 Note the bottom right corner. You can conjure this menu if you have a colour, then click the square containing the colour and scroll down when you see the colour picker.
 
-![color_picker](color_picker.png))
+![color_picker](color_picker.png)
+
 And notably this colour picker: <https://www.webfx.com/web-design/random-color-picker/>
+
+[Contrast ratio in the Color Picker](https://developers.google.com/web/updates/2018/01/devtools#contrast)
 
 2. I saw that you use two separate stylesheets. One for the main CSS, and the other for animations. Is this good practice, or personal choice?
 
@@ -22,6 +25,21 @@ And notably this colour picker: <https://www.webfx.com/web-design/random-color-p
 4. How did you come up with hiding and showing the text with animation?
 
 > Hmm, it seemed like the natural way to structure this. Because it doesn’t require a user action, it’s just something that loops. It was a bit tricky to execute though, because functionally and visually the pulse, rotate and text hide/show are the ‘same’ animation. But in CSS you can only animate one element at a time. This seems dangerous, why? Because if any of the individual animations is changed then the timing will be off for all of them. I tried to get around this by using a CSS variable for the timing, like you did too. That way at least the timing is set.
+
+5. When you open both our bubbles on a phone, they have a vertical scroll. I think it has to do with the height of the spinning circle that changes as it rotates. Any ideas on how to get rid of it?
+
+> I didn’t see a vertical scroll on mine, although it might be my phone. There’s a few ways to fix it, the neatest way to fix it is to not `scale` above `1`, so you start out with a scale below one and then grow to a max of 1. That way you won’t escape the parent element. Provided you also size things in contrast with the viewport (`vh`/`vw`).
+
+> Another way, kind of the crude way but useful in this case is:
+
+```css
+body {
+   max-width: 100vw;
+   max-height: 100vh;
+   overflow: hidden;
+}
+```
+Although if your page contains anything other than the bubble this won’t be ideal. On your phone you will almost always have a slight scroll up and down, because of the browser UI being hidden/shown.
 
 ## Lars's List of Resources [🔗](https://docs.google.com/document/d/117kEP9UGKDL8c348ICpNTrZkIeomdyQWt94FLgTiUpM/edit):
 
