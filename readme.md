@@ -145,23 +145,21 @@ This is, also, how you talk with the DOM, and how you'll end up talking with an 
 
 ### Learning Examples and Articles
 
-- CSS variables
-[30 Day Vanilla JS Coding Challenge - Playing with CSS Variables and JS](https://javascript30.com/)
+- [animation-play-state](https://tympanus.net/codrops/css_reference/animation-play-state/)
 
-- Easing functionshttps://css-tricks.com/recreating-apple-watch-breathe-app-animation/
-<https://css-tricks.com/ease-out-in-ease-in-out/>
-
-- `font-smoothing` property
-[Font Smoothing Explained](https://szafranek.net/blog/2009/02/22/font-smoothing-explained/)
-
-- [Improving font rendering with CSS](https://medium.com/@MateMarschalko/improving-font-rendering-with-css-3383fc358cbc)
+- [Easing functions](https://css-tricks.com/ease-out-in-ease-in-out/)
 
 - [font-smooth](https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth)
 
+- [Font Smoothing Explained](https://szafranek.net/blog/2009/02/22/font-smoothing-explained/)
+
+- [Improving font rendering with CSS](https://medium.com/@MateMarschalko/improving-font-rendering-with-css-3383fc358cbc)
+
+- [Responsive Web Design](https://learn.shayhowe.com/advanced-html-css/responsive-web-design/)
+
+- [30 Day Vanilla JS Coding Challenge - Playing with CSS Variables and JS](https://javascript30.com/)
+
 - [What is the best font color for text on a white background screen?](https://www.quora.com/What-is-the-best-font-color-for-text-on-a-white-background-screen-Are-there-any-studies-to-back-this-up-in-terms-of-optimal-readability)
 
-- [animation-play-state](https://tympanus.net/codrops/css_reference/animation-play-state/)
-
 ### More
-- [Accessibility Inspector
-](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector)
+- [Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector)
